@@ -4,6 +4,7 @@
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
+		<script src="fancifymytext.js" defer></script>
 		
 	</head>
 
@@ -12,7 +13,6 @@
 		
 
 		<!-- Your UI controls go here -->
-		 <!Adding fieldset for user input, row is 4 and column is 30>
 		 <fieldset> 
 			<legend>Text</legend>
 			<textarea rows="4" cols="30" id="inputText">
@@ -21,14 +21,16 @@
 
 		 <fieldset>
 			<legend> Fancify </legend>
-			<button id="Bigger">Bigger</button> 
+			<button id="Bigger" onclick="AlertButton()">Bigger</button> 
 			<br>
 
-			<input type="radio" id="FancyShmancy" name="style" value="fancy">
+			<input type="radio" id="FancyShmancy" name="style" value="fancy" onchange="AlertButton2()">
 			<label for="FancyShmancy">FancyShmancy</label>
 
-			<input type="radio" id="BoringBetty" name="style" value ="BoringBetty">
+			<input type="radio" id="BoringBetty" name="style" value ="BoringBetty" onchange="AlertButton3()">
 			<label for="BoringBetty">Boring Betty</label>
+
+			<button id="Moo" onclick="modifyingText()">Moo</button>
 
 		 </fieldset>
 
