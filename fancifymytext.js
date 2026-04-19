@@ -22,7 +22,7 @@ function AlertButton3() {
 
 function modifyingText(){
     var text = document.getElementById("inputText").value;
-    text = text.toUpperCase();
+    text = text.trim().toUpperCase();
     var delimiter = text.split(" ");
     text = delimiter.join("-Moo ") + "-Moo";
     document.getElementById("inputText").value = text;
